@@ -13,11 +13,11 @@ element = wd.find_element_by_class_name('login-btn-text')
 element.click()
 wd.implicitly_wait(10)
 element = wd.find_element_by_id('userLoginName')
-element.send_keys('wit1915040123')
+element.send_keys('你的用户名')
 
 wd.implicitly_wait(10)
 element =wd.find_element_by_id('userPassword')
-element.send_keys('wit1915040123')
+element.send_keys('你的密码')
 
 wd.implicitly_wait(10)
 element = wd.find_element_by_css_selector('.button.button-red-solid.btn-confirm')
