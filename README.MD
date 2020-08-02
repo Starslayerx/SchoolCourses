@@ -22,3 +22,6 @@
 # bug
 
 如果出现无法解决的问题，欢迎到**Issues**里面提问
+
+# 项目协议
+详见：[GNU通用公共许可证](https://www.gnu.org/licenses/gpl-3.0.html)
