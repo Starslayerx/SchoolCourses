@@ -65,5 +65,52 @@
 >`WebElement.get_attribute('innerText')`   或者
 `WebElement.get_attribute('textContent')`
 ***
+
 ## frame切换/窗口切换
 
+### 1. frame切换
+
+###### iframe元素非常的特殊,在html语法中，frame元素或者iframe元素的内部会包含一个被嵌入的另一份html文档。在我们使用selenium打开一个网页是， 我们的操作范围缺省是当前的 html,并不包含被嵌入的html文档里面的内容。如果我们要操作被嵌入的html文档中的元素,就必须 切换操作范围到被嵌入的文档中。
+
+* 使用frame的ID切换
+
+> `wd.switch_to.frame('frameID')`
+
+* 使用frame的name切换
+
+> `wd.switch_to.frame('framename')`
+
+* 先找到frame再切换(用find方法找)
+
+> `wd.switch_to.frame(wd.find_element_by_tag_name("iframe"))`
+
+* 切回主HTML
+
+> `wd.switch_to.default_content()`
+
+### 2. 窗口切换
+###### 即使新窗口打开了,这时候,我们的 WebDriver对象对应的还是老窗口,自动化操作也还是在老窗口进行。
+
+> `wd.switch_to.window(handle)`
+
+如：
+
+```
+for handle in wd.window_handles:
+    # 先切换到该窗口
+    wd.switch_to.window(handle)
+    # 得到该窗口的标题栏字符串，判断是不是我们要操作的那个窗口
+    if 'Bing' in wd.title:
+        # 如果是，那么这时候WebDriver对象就是对应的该该窗口，正好，跳出循环，
+        breaks
+```
+
+* 切回原来的窗口
+
+1. mainWindow变量保存原来窗口的句柄
+
+> `mainWindow = wd.current_window_handle`
+
+1. 通过前面保存的老窗口的句柄，自己切换到老窗口
+ 
+> `wd.switch_to.window(mainWindow)`
