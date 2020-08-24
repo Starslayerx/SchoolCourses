@@ -114,3 +114,5 @@ for handle in wd.window_handles:
 1. 通过前面保存的老窗口的句柄，自己切换到老窗口
  
 > `wd.switch_to.window(mainWindow)`
+
+
