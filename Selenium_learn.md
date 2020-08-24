@@ -40,7 +40,9 @@
 
 如：
 >`wd.find_element_by_css_selector('. + 类名')`
+
 >`wd.find_element_by_css_selector('# + ID名')`
+
 >`wd.find_element_by_css_selector('tag名')`
 * 组选择，子节点和兄弟节点的选择暂时略，还么想好怎么写，后面应该会补上
 #### 3、操控所选择的元素
