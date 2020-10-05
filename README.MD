@@ -8,8 +8,8 @@
 
 # 目前项目
 
-- [x] u学院，数学分析自动刷ppt
-- [x] u学院，大学语文自动刷ppt
+- :heavy_check_mark: u学院，数学分析自动刷ppt
+- :heavy_check_mark: u学院，大学语文自动刷ppt
 
 # 使用
 
