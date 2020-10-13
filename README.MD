@@ -6,10 +6,12 @@
 
 - 如果有新的刷ppt课程，本项目会继续更新，如果本项目对你有帮助欢迎star
 
+- chromedriver下载地址: (https://chromedriver.chromium.org/downloads)[https://chromedriver.chromium.org/downloads]
+
 # 目前项目
 
 - :heavy_check_mark: u学院，数学分析自动刷ppt
-- :heavy_check_mark: u学院，大学语文自动刷ppt
+- :heavy_check_mark: u学院，大学语文自动刷ppt (需要不同章节可根据注释修改代码)
 
 # 使用
 
