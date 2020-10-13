@@ -24,16 +24,17 @@ element = wd.find_element_by_css_selector('.button.button-red-solid.btn-confirm'
 element.click()
 
 wd.implicitly_wait(10)
-element = wd.find_elements_by_class_name('course-cover col-sm-12 col-xs-5')
-
-element[0].click()
+element = wd.find_elements_by_class_name('cover-wrapper')
+element[8].click()
 
 time.sleep(3)
 
 wd.implicitly_wait(10)
-element = wd.find_element_by_css_selector('[href="#/course/textbook?courseId=41841"]')
+element = wd.find_element_by_class_name('tab-textbook')
+
+element[3].click()
 #课件被覆盖，改用以下方法
-wd.execute_script("arguments[0].click();", element)
+#wd.execute_script("arguments[3].click();", element)
 
 wd.implicitly_wait(10)
 #button前需要等待几秒
