@@ -6,7 +6,7 @@
 
 - 如果有新的刷ppt课程，本项目会继续更新，如果本项目对你有帮助欢迎star
 
-- chromedriver下载地址: (https://chromedriver.chromium.org/downloads)[https://chromedriver.chromium.org/downloads]
+- chromedriver下载地址: [https://chromedriver.chromium.org/downloads]
 
 # 目前项目
 
