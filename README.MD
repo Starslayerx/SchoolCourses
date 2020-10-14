@@ -11,9 +11,10 @@
 
 # 目前项目
 
-- :heavy_check_mark: u学院，数学分析自动刷ppt
-- :heavy_check_mark: u学院，大学语文自动刷ppt (需要不同章节可根据注释修改代码)
-
+- :heavy_check_mark: u学院，数学分析(1)自动刷ppt
+- :heavy_check_mark: u学院，数学分析(2)自动刷ppt
+- :heavy_check_mark: u学院，数学分析(3)自动刷ppt (需要不同章节可根据注释修改代码)
+- :heavy_check_mark: u学院，大学语文自动刷ppt 
 # 使用
 
 1. 把代码中**你的账号**、**你的密码**换成自己的账号密码
