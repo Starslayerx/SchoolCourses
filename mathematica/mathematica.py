@@ -36,12 +36,18 @@ elements[1].click()#选中课件
 
 #课件被覆盖，改用以下方法
 #wd.execute_script("arguments[3].click();", element)
-
 wd.implicitly_wait(10)
 # #button前需要等待几秒
 time.sleep(3)
 elements = wd.find_elements_by_class_name("button-red-hollow")
-elements[2].click()#调整这里来选择不同的章节
+"""
+修改下一行elements数组中的元素来确定刷那一章
+0   刷第11章
+1   刷第12章
+2   刷第13章
+3   刷第14章
+"""
+elements[3].click()#调整这里来选择不同的章节
 
 #打开的新窗口，但仍然聚焦在旧窗口，如下代码跳转窗口
 for handle in wd.window_handles:
@@ -69,6 +75,13 @@ while True:
     element2.click()
     time.sleep(random.randint(1, 3))
     element2.click()
+    time.sleep(random.randint(1, 3))
+    element1.click()
+    time.sleep(random.randint(1, 3))
+    element1.click()
+    time.sleep(random.randint(1, 3))
+    element2.click()
+    time.sleep(random.randint(1, 3))
     time.sleep(random.randint(1, 3))
     element1.click()
     time.sleep(random.randint(1, 3))
