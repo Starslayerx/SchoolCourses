@@ -60,17 +60,21 @@ for i in range(0,3):
     element = wd.find_element_by_css_selector('.btn-hollow')
     element.click()
 
+elements = wd.find_elements_by_class_name('page-item')
+
+elements[14].click()#选择小节
+#改变小节后这里也要改
+filename = re.findall("(..-.*)",elements[14].text)[0]
+os.makedirs(filename)
+#获取文件名并新建文件
+
+
+
 element = wd.find_element_by_css_selector('.view-btn')
 element.click()
 time.sleep(2)
 
 
-elements = wd.find_elements_by_class_name('page-item')
-
-elements[10].click()#选择小节
-filename = re.findall("(..-.*)",elements[10].text)
-os.makedirs(filename[0])
-#获取文件名并新建文件
 
 # 进入iframe框架
 wd.switch_to.frame(wd.find_element_by_tag_name('iframe'))
