@@ -1,7 +1,8 @@
-# 说明
+# 食用说明
 
-## 准备工作:
+- 准备工作
    1. 下载selenium库
+   
    使用pip下载
    ```shell
    pip install selenium
@@ -14,11 +15,11 @@
    - chromedriver下载地址: [https://chromedriver.chromium.org/downloads](https://chromedriver.chromium.org/downloads)
    - 国内下载地址：[https://chromedriver.storage.googleapis.com/index.html](https://chromedriver.storage.googleapis.com/index.html)
    
-## 代码调试
-1. 把代码中**你的账号**、**你的密码**换成自己的账号密码
-2. 根据自己的浏览器版本下载相应驱动(文件中驱动为chromedriver81版本)
-3. 运行代码，如果需要其他章节请根据注释修改代码
-4. 运行需要时间后记得**手动退出**学习页面，否则系统不会计时
+- 代码调试
+   1. 把代码中**你的账号**、**你的密码**换成自己的账号密码
+   2. 根据自己的浏览器版本下载相应驱动(文件中驱动为chromedriver81版本)
+   3. 运行代码，如果需要其他章节请根据注释修改代码
+   4. 运行需要时间后记得**手动退出**学习页面，否则系统不会计时
 
 
 
